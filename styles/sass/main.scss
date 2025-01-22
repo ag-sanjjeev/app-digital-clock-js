@@ -26,7 +26,7 @@ body {
 	padding: 0 pixel_to_rem(16);
 	width: 100%;
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 }
 
@@ -66,6 +66,15 @@ body {
 			width: pixel_to_rem(20);
 			aspect-ratio: 1;
 			border-radius: 50%;
+		}
+	}
+
+	.text {
+		position: absolute;
+		font-family: 'arial', sans-serif;
+		.name, .date {
+			display: block;
+			text-align: center;
 		}
 	}
 }
@@ -126,9 +135,7 @@ body {
 	}
 }
 
-#hours-text, #minutes-text, #seconds-text, #meridian-text {
-	position: absolute;
-	font-family: 'arial', sans-serif;
+#hours-text, #minutes-text, #seconds-text, #meridian-text {	
 	font-size: pixel_to_rem(50);
 	letter-spacing: pixel_to_rem(5);
 }
