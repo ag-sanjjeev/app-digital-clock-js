@@ -43,7 +43,7 @@ function Clock() {
 		self.secondsCircle = document.getElementById('seconds-circle');
 		self.meridianCircle = document.getElementById('meridian-circle');
 		self.date = document.querySelector('.text .date');
-		self.circleStrokeDash = 630; // defined in styles for each circles
+		self.circleStrokeDash = 502; // defined in styles for each circles
 	};
 
 	// run function
